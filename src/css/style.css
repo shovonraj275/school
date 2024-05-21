@@ -2,3 +2,11 @@
     margin: 0;
     padding: 0;
 }
+#top_head{
+    background: #01fde8;
+    padding: 16px 24px; 
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+#top_head{}
