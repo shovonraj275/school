@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/jquery.bxslider.css">
     <title>ইউনিভার্সাল কিন্ডারগার্টেন, রাজশাহী </title>
 </head>
 
@@ -24,6 +26,68 @@
         </div>
     </div>
     <!-- lower header -->
+    <section id="news">
+        <div class="grid">
+            <div class="gird_content">
+                সর্বশেষ খবর
+            </div>
+            <div class="gird_content">
+                <marquee behavior="" direction="" onmouseover="this.stop();" onmouseout="this.start();"> <a
+                        href="">ভর্তি চলেছে </a> <a href="">বকেয়া বেতন পরিশেধ সংকান্ত্র </a> <a href="">পরীক্ষার রুটিন
+                    </a><a href="">চিত্রংকন</a> </marquee>
+            </div>
+        </div>
+
+
+    </section>
+
+   <section>
+     <nav>
+         <div class="topnav" id="myTopnav">
+             <a href="">মূল পাতা</a>
+             <a href="">আমাদের সম্পর্কে</a>
+             <a href="">ভর্তি </a>
+             <a href="">ফলাফল</a>
+             <div class="dropdown">
+                 <button class="dropbtn"> পাঠ্যপুস্তক তালিকা
+                     <i class="fa fa-caret-down"></i>
+                 </button>
+                 <div class="dropdown-content">
+                     <a href="#">প্রথম শ্রেণী</a>
+                     <a href="#">দ্বিতীয় শ্রেণী</a>
+                     <a href="#">তৃতীয় শ্রেণী</a>
+                     <a href="#">চতুর্থ শ্রেণী</a>
+                     <a href="#">পঞ্চম শ্রেণী</a>
+                 </div>
+             </div>
+              <a href="">শিক্ষক তালিকা</a>
+             <a href="javascript:void(0);" style="font-size:35px;" class="icon" onclick="myFunction()">  &#9776;</a>
+         </div>
+     </nav>
+   </section>
+   <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis officiis consequuntur officia cupiditate id culpa incidunt quas deleniti blanditiis? Ab fugiat suscipit nemo veniam, dolorem at itaque ducimus expedita nostrum?</p> -->
+        <!-- slider -->
+    <section>
+        <div class="slider">
+            <div class=""> <img src="./src/img/01.jpg" alt=""></div>
+            <div class=""> <img src="./src/img/020.jpg" alt=""></div>
+            <div class=""> <img src="./src/img/03.jpg" alt=""></div>
+            <div class=""> <img src="./src/img/04.jpg" alt=""></div>
+        </div>
+    </section>
+        <!-- slider -->
+    <script src="https://kit.fontawesome.com/0869400e8c.js" crossorigin="anonymous"></script>
+    <script src="./src/js/jquary.js"></script>
+    <script src="./src/js/jquery.bxslider.min.js"></script>
+    <script src="./src/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".slider").bxSlider({
+                auto:true,
+            });
+        });
+    </script>
 
 </body>
 
