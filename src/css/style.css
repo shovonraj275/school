@@ -32,7 +32,7 @@ a {
     grid-template-columns: auto auto;
 }
 
-.grid_section {}
+
 
 .name {
     margin-top: 14px;
@@ -53,7 +53,7 @@ a {
 }
 
 #news {
-    padding: 0px 100px;
+    padding: 0px 200px;
     background: #a9a6a6;
 }
 
@@ -204,10 +204,36 @@ a {
 
 .bx-wrapper{
     z-index: -1;
+    margin-bottom: 0 !important;
 }
 .bx-pager {
     display: none;
 }
+/* aboutus */
+
+#About_Us{
+    padding: 50px 200px;
+}
+#About_Us h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 35px;
+}
+#About_Us .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+#About_Us .grid_content {
+    text-align: justify;
+}
+#About_Us img {
+    width: 100%;
+    height: auto;
+}
+
+/* aboutus */
 
 /*responsive */
 
@@ -264,6 +290,21 @@ a {
     }
 
     /* nav */
+    .slider img {
+    width: 100%;
+    height: 250px;
+}
+#About_Us {
+    padding: 20px;
+}
+#About_Us .grid{
+    grid-template-columns: auto;
+    gap: 15px;
+}
+#About_Us h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -273,17 +314,29 @@ a {
     float: none;
     padding: 0px 100px;
 }
-.grid {
-    display: grid;
-    grid-template-columns: auto;
-}
+
 #news {
     padding: 0px 50px;
     background: #a9a6a6;
 }
+#news .grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
 .name{
     font-size: 25px !important;
     letter-spacing: 0;
+}
+#About_Us {
+    padding: 20px;
+}
+#About_Us .grid{
+    grid-template-columns: auto;
+    gap: 15px;
+}
+#About_Us h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 }
 
@@ -299,14 +352,27 @@ a {
         font-size: 40px;
         letter-spacing: 0px !important;
     }
+    #news{
+        padding: 0 100px;
+    }
+    .topnav{
+        padding: 0px 100px;
+    }
+    #About_Us {
+    padding: 50px 100px;
+}
+#About_Us .grid{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .topnav {
+    #news,.topnav {
         padding: 0px 100px;
     }
-
     .name {
         margin-top: 14px;
         font-size: 18px;
